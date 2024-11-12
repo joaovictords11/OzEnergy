@@ -5,8 +5,8 @@ import React, { useEffect, useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import MobileMenu from "./components/MobileMenu";
 import FlyoutLink from "./components/FlyoutLink";
-import IntroductionFlyout from "./components/FlyoutContents/IntroductionFlyout";
 import { IoPersonCircleOutline } from "react-icons/io5";
+import PanelsFlyout from "./components/FlyoutContents/PanelsFlyout";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,7 +39,7 @@ const Header = () => {
           </Link>
           <nav className="hidden md:flex items-center gap-14">
             <FlyoutLink href="/">Home</FlyoutLink>
-            <FlyoutLink href="/placas" FlyoutContent={<IntroductionFlyout />}>
+            <FlyoutLink href="/placas" FlyoutContent={<PanelsFlyout />}>
               Placas
             </FlyoutLink>
             <FlyoutLink href="/company">Feedback</FlyoutLink>

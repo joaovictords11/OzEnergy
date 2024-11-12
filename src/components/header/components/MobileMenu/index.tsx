@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
+import { IoPersonCircleOutline } from "react-icons/io5";
 
 type MobileMenuProps = {
   open: boolean;
@@ -22,8 +23,9 @@ const MobileMenu = ({ open }: MobileMenuProps) => {
               <li>Feedback</li>
               <li>Sobre</li>
               <li>
-                <button className="border border-white px-3 py-1 rounded">
-                  Login
+                <button className="flex items-center gap-2 border border-white px-3 py-2 rounded-md">
+                  <IoPersonCircleOutline size={25} />
+                  Entrar
                 </button>
               </li>
             </ul>

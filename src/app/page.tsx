@@ -24,21 +24,21 @@ export default function Home() {
             Nossa reputação
           </h2>
           <div className="flex flex-col items-center justify-center gap-12 md:flex-row md:items-stretch md:gap-20">
-            <article className="flex flex-col gap-3 border rounded p-4 border-slate-300 w-64">
+            <article className="flex flex-col gap-3 border rounded p-4 border-slate-300 w-full sm:w-80 md:w-64">
               <IoMdSunny size={55} className="text-orange-500" />
               <h4 className="text-xl font-bold">Melhores serviços</h4>
               <p className="text-neutral-500">
                 Nullam senectus porttitor in eget. Eget rutrum leo interdum.
               </p>
             </article>
-            <article className="flex flex-col gap-3 border rounded p-4 border-slate-300 w-64">
+            <article className="flex flex-col gap-3 border rounded p-4 border-slate-300 w-full sm:w-80 md:w-64">
               <FaSolarPanel size={53} className="text-orange-500" />
               <h4 className="text-xl font-bold">Placas de qualidade</h4>
               <p className="text-neutral-500">
                 Nullam senectus porttitor in eget. Eget rutrum leo interdum.
               </p>
             </article>
-            <article className="flex flex-col gap-3 border rounded p-4 border-slate-300 w-64">
+            <article className="flex flex-col gap-3 border rounded p-4 border-slate-300 w-full sm:w-80 md:w-64">
               <SlEnergy size={53} className="text-orange-500" />
               <h4 className="text-xl font-bold">Energia acessível</h4>
               <p className="text-neutral-500">
@@ -47,7 +47,7 @@ export default function Home() {
             </article>
           </div>
         </section>
-        <section className="my-16 flex flex-col items-center gap-4 md:gap-12 md:flex-row md:justify-between">
+        <section className="my-20 flex flex-col items-center gap-4 md:gap-12 md:flex-row md:justify-between">
           <div className="flex flex-col gap-4">
             <h2 className="text-4xl font-semibold">
               Evolução da energia solar

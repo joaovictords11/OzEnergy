@@ -7,6 +7,7 @@ import { SlEnergy } from "react-icons/sl";
 import BannerImage from "/public/energia.jpg";
 import StatisticsImage from "/public/paineis.jpg";
 import Image from "next/image";
+import Slider from "@/components/slider";
 
 export default function Home() {
   return (
@@ -47,6 +48,7 @@ export default function Home() {
             </article>
           </div>
         </section>
+        <Slider />
         <section className="my-20 flex flex-col items-center gap-4 md:gap-12 md:flex-row md:justify-between">
           <div className="flex flex-col gap-4">
             <h2 className="text-4xl font-semibold">

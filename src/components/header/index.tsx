@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full flex items-center h-20 bg-white px-3 py-4 shadow-sm">
+      <header className="w-full flex items-center h-20 bg-white px-4 py-4 shadow-sm">
         <section className="w-full flex items-center justify-between max-w-7xl mx-auto">
           <Link
             href="/"

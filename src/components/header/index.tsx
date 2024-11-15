@@ -35,7 +35,7 @@ const Header = () => {
             href="/"
             className="font-bold text-2xl pl-1 hover:scale-105 transition-transform duration-300 ease-out"
           >
-            <span className="text-orange-500">OZ</span> CARBON
+            <span className="text-orange-500">OZ</span> ENERGY
           </Link>
           <nav className="hidden md:flex items-center gap-14">
             <FlyoutLink href="/">Home</FlyoutLink>

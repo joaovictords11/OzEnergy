@@ -5,7 +5,7 @@ import FlyoutImage from "/public/instalacao.jpg";
 const PanelsFlyout = () => {
   return (
     <section className="flex justify-center shadow-lg text-white">
-      <div className="bg-black flex flex-col justify-between w-40 p-6">
+      <div className="bg-neutral-800 flex flex-col justify-between w-40 p-6">
         <div>
           <h3 className="font-extrabold text-xl">OzCarbon</h3>
           <p className="mt-3 font-light text-sm">

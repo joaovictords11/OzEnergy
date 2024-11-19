@@ -29,11 +29,11 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full flex items-center h-20 bg-white px-4 py-4 shadow-sm">
+      <header className="w-full flex items-center h-20 bg-white p-4 shadow-sm">
         <section className="w-full flex items-center justify-between max-w-7xl mx-auto">
           <Link
             href="/"
-            className="font-bold text-2xl pl-1 hover:scale-105 transition-transform duration-300 ease-out"
+            className="font-bold text-2xl pl-1 hover:scale-105 transition-transform duration-300 ease-out text-neutral-700"
           >
             <span className="text-orange-500">OZ</span> ENERGY
           </Link>
@@ -42,7 +42,7 @@ const Header = () => {
             <FlyoutLink href="/placas" FlyoutContent={<PanelsFlyout />}>
               Placas
             </FlyoutLink>
-            <FlyoutLink href="/company">Feedback</FlyoutLink>
+            <FlyoutLink href="/orcamento">Orçamento</FlyoutLink>
             <FlyoutLink href="/sobre">Sobre</FlyoutLink>
           </nav>
           <button className="hidden md:flex items-center gap-2 bg-orange-500 px-3 py-2 rounded-md text-white font-semibold hover:bg-orange-600 duration-300">

@@ -8,7 +8,7 @@ const PanelsFlyout = () => {
       <div className="bg-neutral-800 flex flex-col justify-between w-40 p-6">
         <div>
           <h3 className="font-extrabold text-xl">OzCarbon</h3>
-          <p className="mt-3 font-light text-sm">
+          <p className="mt-3 font-light">
             Placas solares da melhor qualidade com preço acessível
           </p>
         </div>
@@ -26,7 +26,7 @@ const PanelsFlyout = () => {
           alt="Placas solares"
           quality={100}
         />
-        <p className=" text-sm leading-6">
+        <p className="leading-6">
           Placas solares reduzem o seu gasto com energia e ajudam o meio
           ambiente.
         </p>

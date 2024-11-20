@@ -52,7 +52,7 @@ const Footer = () => {
             </p>
             <form className="mt-4 flex items-center">
               <input
-                type="text"
+                type="email"
                 className="outline-none text-neutral-700 rounded-l-lg px-2 py-1 w-full min-w-[120px] max-w-[250px]"
               />
               <button

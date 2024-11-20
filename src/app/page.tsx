@@ -10,6 +10,8 @@ import Image from "next/image";
 import { MdOutlineEnergySavingsLeaf } from "react-icons/md";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import panelInstallation from "/public/panel-installation.jpg";
+import ReputationCard from "@/components/home/reputationCard";
+import StatisticsCard from "@/components/home/statisticsCard";
 
 export default function Home() {
   return (
@@ -27,27 +29,21 @@ export default function Home() {
             Nossa reputação
           </h2>
           <div className="flex flex-col items-center justify-center gap-12 md:flex-row md:items-stretch md:gap-20">
-            <article className="flex flex-col shadow-md gap-3 border rounded-md p-4 border-slate-300 w-full sm:w-80 md:w-64">
-              <IoMdSunny size={55} className="text-orange-500" />
-              <h4 className="text-xl font-bold">Melhores serviços</h4>
-              <p className="text-neutral-500">
-                Nullam senectus porttitor in eget. Eget rutrum leo interdum.
-              </p>
-            </article>
-            <article className="flex flex-col shadow-md gap-3 border rounded-md p-4 border-slate-300 w-full sm:w-80 md:w-64">
-              <FaSolarPanel size={53} className="text-orange-500" />
-              <h4 className="text-xl font-bold">Placas de qualidade</h4>
-              <p className="text-neutral-500">
-                Nullam senectus porttitor in eget. Eget rutrum leo interdum.
-              </p>
-            </article>
-            <article className="flex flex-col shadow-md gap-3 border rounded-md p-4 border-slate-300 w-full sm:w-80 md:w-64">
-              <SlEnergy size={53} className="text-orange-500" />
-              <h4 className="text-xl font-bold">Energia acessível</h4>
-              <p className="text-neutral-500">
-                Nullam senectus porttitor in eget. Eget rutrum leo interdum.
-              </p>
-            </article>
+            <ReputationCard
+              title="Melhores serviços"
+              text="Nullam senectus porttitor in eget. Eget rutrum leo interdum."
+              icon={<IoMdSunny size={55} className="text-orange-500" />}
+            />
+            <ReputationCard
+              title="Placas de qualidade"
+              text="Nullam senectus porttitor in eget. Eget rutrum leo interdum."
+              icon={<FaSolarPanel size={55} className="text-orange-500" />}
+            />
+            <ReputationCard
+              title="Energia acessível"
+              text="Nullam senectus porttitor in eget. Eget rutrum leo interdum."
+              icon={<SlEnergy size={55} className="text-orange-500" />}
+            />
           </div>
         </section>
         <section className="mt-20 flex flex-col gap-16 items-center md:flex-row md:justify-between md:gap-10">
@@ -119,54 +115,51 @@ export default function Home() {
               <span className="text-orange-500">business reinvent itself</span>
             </h2>
             <p className="mt-2">
-              We reached here with our hard <br className="lg:hidden"/> work and dedication
+              We reached here with our hard <br className="lg:hidden" /> work
+              and dedication
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-9">
-            <article className="flex gap-4 items-center">
-              <IoMdTimer size={50} className=" text-orange-500 min-w-10" />
-
-              <div className="flex flex-col">
-                <p className="w-36 font-bold text-xl">2.245.341</p>
-                <p className="text-neutral-500">Members</p>
-              </div>
-            </article>
-            <article className="flex gap-4 items-center">
-              <MdOutlineEnergySavingsLeaf
-                size={50}
-                className=" text-orange-500 min-w-10"
-              />
-
-              <div className="flex flex-col">
-                <p className="w-36 font-bold text-xl">46.328</p>
-                <p className="text-neutral-500">Clubs</p>
-              </div>
-            </article>
-            <article className="flex gap-4 items-center">
-              <RiMoneyDollarCircleLine
-                size={50}
-                className=" text-orange-500 min-w-10"
-              />
-
-              <div className="flex flex-col">
-                <p className="w-36 font-bold text-xl">828.867</p>
-                <p className="text-neutral-500">Event Bookings</p>
-              </div>
-            </article>
-            <article className="flex gap-4 items-center">
-              <IoMdTimer size={50} className=" text-orange-500 min-w-10" />
-
-              <div className="flex flex-col">
-                <p className="w-36 font-bold text-xl">1.926.436</p>
-                <p className="text-neutral-500">Payments</p>
-              </div>
-            </article>
+            <StatisticsCard
+              detail="2.245.341"
+              text="Members"
+              icon={
+                <IoMdTimer size={50} className=" text-orange-500 min-w-10" />
+              }
+            />
+            <StatisticsCard
+              detail="46.328"
+              text="Clubs"
+              icon={
+                <MdOutlineEnergySavingsLeaf
+                  size={50}
+                  className=" text-orange-500 min-w-10"
+                />
+              }
+            />
+            <StatisticsCard
+              detail="828.867"
+              text="Event Bookings"
+              icon={
+                <RiMoneyDollarCircleLine
+                  size={50}
+                  className=" text-orange-500 min-w-10"
+                />
+              }
+            />
+            <StatisticsCard
+              detail="1.926.436"
+              text="Payments"
+              icon={
+                <IoMdTimer size={50} className=" text-orange-500 min-w-10" />
+              }
+            />
           </div>
         </div>
       </section>
 
       <Container>
-        <section className="my-20 flex flex-col items-center gap-4 md:gap-12 md:flex-row-reverse md:justify-between">
+        <section className="mt-20 mb-28 flex flex-col items-center gap-4 md:gap-12 md:flex-row-reverse md:justify-between">
           <div className="flex flex-col gap-4 md:text-right">
             <h2 className="text-4xl font-semibold">
               Evolução da energia solar

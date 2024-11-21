@@ -15,13 +15,14 @@ import StatisticsCard from "@/components/home/statisticsCard";
 
 export default function Home() {
   return (
-    <main className="text-neutral-700">
+    <main>
       <Banner
         title="Venha conhecer a OzEnergy e desfrutar de nossos serviços"
         icon={<FiPhone size={24} />}
         bannerUrl={BannerImage.src}
         buttonTitle="Fale com nosso time"
         buttonUrl="#footer"
+        scrollId="footer"
       />
       <Container>
         <section className="mt-16">
@@ -32,17 +33,17 @@ export default function Home() {
             <ReputationCard
               title="Melhores serviços"
               text="Nullam senectus porttitor in eget. Eget rutrum leo interdum."
-              icon={<IoMdSunny size={55} className="text-orange-500" />}
+              icon={IoMdSunny}
             />
             <ReputationCard
               title="Placas de qualidade"
               text="Nullam senectus porttitor in eget. Eget rutrum leo interdum."
-              icon={<FaSolarPanel size={55} className="text-orange-500" />}
+              icon={FaSolarPanel}
             />
             <ReputationCard
               title="Energia acessível"
               text="Nullam senectus porttitor in eget. Eget rutrum leo interdum."
-              icon={<SlEnergy size={55} className="text-orange-500" />}
+              icon={SlEnergy}
             />
           </div>
         </section>
@@ -106,7 +107,7 @@ export default function Home() {
         </section>
       </Container>
 
-      <section className="bg-neutral-50 mt-20">
+      <section className="bg-neutral-50 mt-20 shadow-sm">
         <div className="max-w-7xl mx-auto flex flex-col items-center md:flex-row gap-6 justify-between py-8 px-4">
           <div className="text-center md:text-left">
             <h2 className="font-bold text-2xl">
@@ -123,36 +124,22 @@ export default function Home() {
             <StatisticsCard
               detail="2.245.341"
               text="Members"
-              icon={
-                <IoMdTimer size={50} className=" text-orange-500 min-w-10" />
-              }
+              icon={IoMdTimer}
             />
             <StatisticsCard
               detail="46.328"
               text="Clubs"
-              icon={
-                <MdOutlineEnergySavingsLeaf
-                  size={50}
-                  className=" text-orange-500 min-w-10"
-                />
-              }
+              icon={MdOutlineEnergySavingsLeaf}
             />
             <StatisticsCard
               detail="828.867"
               text="Event Bookings"
-              icon={
-                <RiMoneyDollarCircleLine
-                  size={50}
-                  className=" text-orange-500 min-w-10"
-                />
-              }
+              icon={RiMoneyDollarCircleLine}
             />
             <StatisticsCard
               detail="1.926.436"
               text="Payments"
-              icon={
-                <IoMdTimer size={50} className=" text-orange-500 min-w-10" />
-              }
+              icon={IoMdTimer}
             />
           </div>
         </div>

@@ -14,7 +14,7 @@ const PanelsFlyout = () => {
         </div>
         <a
           href="/placas"
-          className="font-semibold flex items-center mt-14 gap-1 hover:opacity-75"
+          className="font-semibold flex items-center mt-14 gap-1 hover:opacity-75 duration-200"
         >
           Veja mais <FaArrowRight size={20} className="pt-[2px]" />
         </a>

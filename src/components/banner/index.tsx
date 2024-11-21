@@ -1,4 +1,5 @@
 import Image from "next/image";
+import BannerBtn from "./bannerBtn";
 
 type BannerProps = {
   title: string;
@@ -6,6 +7,7 @@ type BannerProps = {
   buttonTitle?: string;
   bannerUrl: string;
   icon?: React.ReactNode;
+  scrollId: string;
 };
 
 const Banner = ({
@@ -14,6 +16,7 @@ const Banner = ({
   buttonUrl,
   title,
   icon,
+  scrollId,
 }: BannerProps) => {
   return (
     <section className="w-full flex justify-center items-center">
@@ -21,14 +24,12 @@ const Banner = ({
         <h1 className="text-3xl md:text-4xl font-bold text-white text-center max-w-[600px] mb-4 mx-6">
           {title}
         </h1>
-        <a
-          // target="_blank"
-          href={buttonUrl}
-          className="bg-orange-500 mt-4 flex items-center gap-4 text-white py-2 px-6 rounded-lg font-medium hover:scale-105 duration-300"
-        >
-          {icon}
-          {buttonTitle}
-        </a>
+        <BannerBtn
+          buttonTitle={buttonTitle!}
+          buttonUrl={buttonUrl!}
+          icon={icon}
+          id={scrollId}
+        />
       </div>
       <figure className="relative w-full bg-black h-96">
         <Image

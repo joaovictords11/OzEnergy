@@ -1,7 +1,11 @@
+import { authOptions } from "@/lib/authOptions";
+import { getServerSession } from "next-auth";
 import Link from "next/link";
 import { BsFillSendFill } from "react-icons/bs";
 
-const Footer = () => {
+const Footer = async () => {
+  const session = await getServerSession(authOptions);
+
   return (
     <footer className="bg-orange-500" id="footer">
       <section className="max-w-7xl mx-auto text-white p-4">
@@ -25,16 +29,27 @@ const Footer = () => {
                 Serviços
               </li>
               <li>
-                <Link href="/" className="hover:opacity-80 duration-300">Home</Link>
+                <Link href="/" className="hover:opacity-80 duration-300">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link href="/placas" className="hover:opacity-80 duration-300">Placas</Link>
+                <Link href="/placas" className="hover:opacity-80 duration-300">
+                  Placas
+                </Link>
               </li>
               <li>
-                <Link href="/orcamento" className="hover:opacity-80 duration-300">Orçamento</Link>
+                <Link
+                  href="/orcamento"
+                  className="hover:opacity-80 duration-300"
+                >
+                  Orçamento
+                </Link>
               </li>
               <li>
-                <Link href="/sobre" className="hover:opacity-80 duration-300">Sobre</Link>
+                <Link href="/sobre" className="hover:opacity-80 duration-300">
+                  Sobre
+                </Link>
               </li>
             </ul>
             <ul className="flex flex-col gap-2 text-neutral-100 break-all md:break-normal">
@@ -53,11 +68,12 @@ const Footer = () => {
             <form className="mt-4 flex items-center">
               <input
                 type="email"
-                className="outline-none text-neutral-700 rounded-l-lg px-2 py-1 w-full min-w-[120px] max-w-[250px]"
+                defaultValue={session?.user ? session.user.email! : ""}
+                className="outline-none text-neutral-500 rounded-l-lg px-2 py-1 w-full min-w-[120px] max-w-[250px]"
               />
               <button
                 type="submit"
-                className="bg-neutral-700 py-2 px-2 rounded-r-lg hover:bg-neutral-800 duration-300"
+                className="bg-neutral-700 py-2 px-2 h-[32px] rounded-r-lg hover:bg-neutral-800 duration-300"
               >
                 <BsFillSendFill size={18} />
               </button>

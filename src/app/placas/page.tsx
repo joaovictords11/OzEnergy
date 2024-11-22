@@ -4,7 +4,6 @@ import { PiSolarPanelDuotone } from "react-icons/pi";
 import BannerImage from "/public/slider3.jpg";
 import Container from "@/components/container";
 import { GoLaw } from "react-icons/go";
-import { FaMoneyCheckDollar } from "react-icons/fa6";
 import { getAllPanels } from "@/services/api";
 import PanelCard from "@/components/placas/panelCard";
 import Link from "next/link";
@@ -97,20 +96,20 @@ const Placas = async () => {
           <h2 className="font-semibold text-4xl text-center mb-12">
             Nossos modelos disponíveis
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {panels ? (
-              panels.map((panel) => (
+          {panels ? (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+              {panels.map((panel) => (
                 <PanelCard
                   key={panel.id}
                   name={panel.nome}
                   price={panel.preco.toFixed(2).replace(".", ",")}
                   savingPercentage={panel.percentualDeEconomia}
                 />
-              ))
-            ) : (
-              <p className="text-center">Não foi possível carregar os dados</p>
-            )}
-          </div>
+              ))}
+            </div>
+          ) : (
+            <p className="text-xl text-center">Não foi possível carregar os dados</p>
+          )}
         </section>
       </Container>
     </main>

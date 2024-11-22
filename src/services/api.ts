@@ -6,8 +6,12 @@ const instance = axios.create({
 });
 
 export const getAllPanels = async () => {
-  const response = await instance.get("painelSolar/all");
-  const data: PanelProps[] = response.data;
+  try {
+    const response = await instance.get("painelSolar/all");
+    const data: PanelProps[] = response.data;
 
-  return data;
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
 };

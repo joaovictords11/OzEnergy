@@ -10,7 +10,8 @@ import aboutImg from "/public/sobre.jpg";
 import { FaGithub } from "react-icons/fa";
 import FounderCard from "@/components/sobre/founderCard";
 import { MdGroups, MdOutlineEnergySavingsLeaf } from "react-icons/md";
-import { IoMdArrowForward, IoMdTimer } from "react-icons/io";
+import { IoMdArrowForward } from "react-icons/io";
+import { BiWorld } from "react-icons/bi";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import DetailCard from "@/components/sobre/detailCard";
 import Link from "next/link";
@@ -31,16 +32,17 @@ const Sobre = () => {
           <div className="flex flex-col gap-8">
             <h2 className="text-4xl font-semibold">Sobre nós</h2>
             <p className="max-w-96">
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
+              Nossa empresa é especializada em oferecer orçamentos
+              personalizados e serviços completos de instalação de placas
+              solares, garantindo eficiência e sustentabilidade em cada projeto
+              realizado.
             </p>
             <Link
               href="/placas"
               className="bg-orange-500 flex items-center gap-2 hover:bg-orange-600 duration-200 px-4 py-2 w-fit text-white font-medium rounded-md"
             >
               Nossos produtos
-              <IoMdArrowForward size={22}/>
+              <IoMdArrowForward size={22} />
             </Link>
           </div>
           <div className="w-full md:w-auto rounded-lg flex-grow">
@@ -58,21 +60,15 @@ const Sobre = () => {
         <div className="max-w-7xl mx-auto flex flex-col items-center md:flex-row gap-6 justify-between py-8 px-4">
           <DetailCard
             icon={MdOutlineEnergySavingsLeaf}
-            text="Dui consectetur gravida platea ut dis diam. Enim morbi proin
-              auctor et nisl phasellus. Ultricies pharetra, id quam facilisis
-              urna, enim."
+            text="A energia sustentável transforma o mundo, promovendo inovação e respeito ao meio ambiente com soluções limpas e renováveis."
           />
           <DetailCard
-            icon={IoMdTimer}
-            text="Dui consectetur gravida platea ut dis diam. Enim morbi proin
-              auctor et nisl phasellus. Ultricies pharetra, id quam facilisis
-              urna, enim."
+            icon={BiWorld}
+            text="Fontes renováveis como o sol e o vento são essenciais para criar um futuro equilibrado e ambientalmente responsável."
           />
           <DetailCard
             icon={RiMoneyDollarCircleLine}
-            text="Dui consectetur gravida platea ut dis diam. Enim morbi proin
-              auctor et nisl phasellus. Ultricies pharetra, id quam facilisis
-              urna, enim."
+            text="Sustentabilidade global depende do uso consciente de recursos, investindo em energia limpa para preservar o planeta."
           />
         </div>
       </section>

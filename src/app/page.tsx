@@ -7,7 +7,7 @@ import { SlEnergy } from "react-icons/sl";
 import BannerImage from "/public/energia.jpg";
 import StatisticsImage from "/public/paineis.jpg";
 import Image from "next/image";
-import { MdOutlineEnergySavingsLeaf } from "react-icons/md";
+import { MdGroups, MdOutlineEnergySavingsLeaf } from "react-icons/md";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import panelInstallation from "/public/panel-installation.jpg";
 import ReputationCard from "@/components/home/reputationCard";
@@ -32,17 +32,17 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center gap-12 md:flex-row md:items-stretch md:gap-20">
             <ReputationCard
               title="Melhores serviços"
-              text="Nullam senectus porttitor in eget. Eget rutrum leo interdum."
+              text="Asseguramos a qualidade do serviço desde o planejamento até a instalação"
               icon={IoMdSunny}
             />
             <ReputationCard
               title="Placas de qualidade"
-              text="Nullam senectus porttitor in eget. Eget rutrum leo interdum."
+              text="Do projeto à execução, garantimos excelência nos serviços e nos equipamentos fornecidos."
               icon={FaSolarPanel}
             />
             <ReputationCard
               title="Energia acessível"
-              text="Nullam senectus porttitor in eget. Eget rutrum leo interdum."
+              text="Alcance independência energética e reduza sua conta de energia em até 90%."
               icon={SlEnergy}
             />
           </div>
@@ -55,10 +55,9 @@ export default function Home() {
                 <IoMdTimer size={60} className=" text-orange-500" />
               </figure>
               <div>
-                <h6 className="font-semibold text-xl">Save Time</h6>
+                <h6 className="font-semibold text-xl">Ganhe tempo</h6>
                 <p className="text-neutral-500 md:max-w-sm">
-                  Get up to 3 quotes from our selected suppliers by filling in
-                  only 1 form
+                  Projeto completo: peças e instalação
                 </p>
               </div>
             </article>
@@ -70,10 +69,9 @@ export default function Home() {
                 />
               </figure>
               <div>
-                <h6 className="font-semibold text-xl">Save Money</h6>
+                <h6 className="font-semibold text-xl">Economize</h6>
                 <p className="text-neutral-500 md:max-w-sm">
-                  Get up to 3 quotes from our selected suppliers by filling in
-                  only 1 form
+                  Até 95% de economia
                 </p>
               </div>
             </article>
@@ -85,12 +83,9 @@ export default function Home() {
                 />
               </figure>
               <div>
-                <h6 className="font-semibold text-xl">
-                  Free and No Obligation
-                </h6>
+                <h6 className="font-semibold text-xl">Qualidade garantida</h6>
                 <p className="text-neutral-500 md:max-w-sm">
-                  Get up to 3 quotes from our selected suppliers by filling in
-                  only 1 form
+                  Garantia de 12 anos no inversor e nos módulos
                 </p>
               </div>
             </article>
@@ -111,34 +106,33 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex flex-col items-center md:flex-row gap-6 justify-between py-8 px-4">
           <div className="text-center md:text-left">
             <h2 className="font-bold text-2xl">
-              Helping a local
+              Ajudando famílias
               <br />
-              <span className="text-orange-500">business reinvent itself</span>
+              <span className="text-orange-500">de todas as classes</span>
             </h2>
             <p className="mt-2">
-              We reached here with our hard <br className="lg:hidden" /> work
-              and dedication
+              Sem reajustes anuais igual à conta de energia.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-9">
             <StatisticsCard
               detail="2.245.341"
-              text="Members"
-              icon={IoMdTimer}
+              text="Clientes"
+              icon={MdGroups}
             />
             <StatisticsCard
               detail="46.328"
-              text="Clubs"
+              text="Casas"
               icon={MdOutlineEnergySavingsLeaf}
             />
             <StatisticsCard
               detail="828.867"
-              text="Event Bookings"
+              text="Receita"
               icon={RiMoneyDollarCircleLine}
             />
             <StatisticsCard
               detail="1.926.436"
-              text="Payments"
+              text="Economia"
               icon={IoMdTimer}
             />
           </div>

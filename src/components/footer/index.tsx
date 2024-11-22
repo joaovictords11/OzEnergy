@@ -18,8 +18,8 @@ const Footer = async () => {
               OZ ENERGY
             </Link>
             <p className="max-w-xs mt-4 text-neutral-100">
-              At Mentary, we believe in the power of renewable energy to create
-              a more sustainable future.
+              Na OzEnergy, acreditamos no poder da energia renovável para
+              construir um futuro mais sustentável.
             </p>
           </div>
 

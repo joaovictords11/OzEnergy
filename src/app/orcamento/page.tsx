@@ -32,21 +32,18 @@ const Orcamento = async () => {
           </h2>
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <EconomyCard
-              title="Solar Energy Solutions"
-              text="Harness the power of the sun with our comprehensive solar panel
-                installations and maintenance services."
+              title="Energia Solar Completa"
+              text="Aproveite a energia do sol com nossas soluções completas em instalação e manutenção de placas solares."
               imageUrl={economyImg1.src}
             />
             <EconomyCard
-              title="Solar Energy Solutions"
-              text="Harness the power of the sun with our comprehensive solar panel
-                installations and maintenance services."
+              title="Luz Solar Renovável"
+              text="Transforme luz solar em energia limpa com nossos serviços especializados em painéis solares."
               imageUrl={economyImg3.src}
             />
             <EconomyCard
-              title="Solar Energy Solutions"
-              text="Harness the power of the sun with our comprehensive solar panel
-                installations and maintenance services."
+              title="Sustentabilidade Solar"
+              text="Invista em sustentabilidade com nossas instalações eficientes de placas solares e suporte técnico."
               imageUrl={economyImg2.src}
             />
           </div>
@@ -58,9 +55,9 @@ const Orcamento = async () => {
               Conta de luz nas alturas?
             </h2>
             <p className="text-neutral-500 max-w-md mb-8">
-              Entre em contato com a Inntag Solar para a instalação de um
-              sistema eficiente de economia através da energia solar. Garantimos
-              o pacote energético eficiente
+              Entre em contato com nosso time para a instalação de um sistema
+              eficiente de economia através da energia solar, garantimos um
+              pacote energético eficiente
             </p>
             <Link
               href="/placas"

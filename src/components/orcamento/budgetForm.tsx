@@ -16,9 +16,13 @@ const BudgetForm = () => {
 
   useEffect(() => {
     const fetchPanels = async () => {
-      const fetchedPanels = await getAllPanels();
+      try {
+        const fetchedPanels = await getAllPanels();
 
-      setPanels(fetchedPanels);
+        setPanels(fetchedPanels);
+      } catch (error) {
+        toast.error("Falha ao buscar dados");
+      }
     };
 
     fetchPanels();
@@ -41,7 +45,7 @@ const BudgetForm = () => {
     event.preventDefault();
 
     if (!session) {
-      return
+      return;
     }
 
     if (!selectedPanel || !monthlyValue) {

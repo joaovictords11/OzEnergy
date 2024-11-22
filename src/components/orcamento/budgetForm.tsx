@@ -107,7 +107,7 @@ const BudgetForm = () => {
         {session ? (
           <button
             type="submit"
-            className="bg-orange-500 font-medium text-white rounded-md py-1 hover:bg-orange-600 duration-200"
+            className="bg-orange-500 font-medium text-white rounded-md py-1 mt-2 hover:bg-orange-600 duration-200"
           >
             Calcular economia
           </button>

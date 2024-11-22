@@ -1,13 +1,19 @@
 import Banner from "@/components/banner";
 import Container from "@/components/container";
 import BannerImage from "/public/orcamento-banner.jpg";
+import FormImage from "/public/form-image.jpg";
+import LightImage from "/public/light.jpg";
 import economyImg1 from "/public/economy-1.jpg";
 import economyImg2 from "/public/economy-2.jpg";
 import economyImg3 from "/public/economy-3.jpg";
 import { FaMoneyCheckDollar } from "react-icons/fa6";
 import EconomyCard from "@/components/orcamento/economyCard";
+import BudgetForm from "@/components/orcamento/budgetForm";
+import Image from "next/image";
+import Link from "next/link";
+import { IoMdArrowForward } from "react-icons/io";
 
-const Orcamento = () => {
+const Orcamento = async () => {
   return (
     <main>
       <Banner
@@ -45,21 +51,49 @@ const Orcamento = () => {
             />
           </div>
         </section>
+
+        <section className="mb-20 flex flex-col gap-12 md:flex-row items-center justify-between">
+          <div>
+            <h2 className="font-semibold text-4xl mb-2">
+              Conta de luz nas alturas?
+            </h2>
+            <p className="text-neutral-500 max-w-md mb-8">
+              Entre em contato com a Inntag Solar para a instalação de um
+              sistema eficiente de economia através da energia solar. Garantimos
+              o pacote energético eficiente
+            </p>
+            <Link
+              href="/placas"
+              className="bg-orange-500 flex items-center gap-2 hover:bg-orange-600 duration-200 px-4 py-2 w-fit text-white font-medium rounded-md"
+            >
+              Conheça nossas placas
+              <IoMdArrowForward size={22} />
+            </Link>
+          </div>
+          <Image
+            src={LightImage}
+            alt="Imagem fios de energia"
+            quality={100}
+            priority
+            className="max-w-md w-full rounded-lg shadow-md"
+          />
+        </section>
+
         <section id="orcamento" className="mb-28 flex flex-col items-center">
           <h2 className="font-semibold text-4xl text-center mb-12">
-            Seu orçamento
+            Faça seu orçamento
           </h2>
-          <div className="flex w-3/4">
-            <div className="w-1/2 bg-slate-100 rounded-l-lg"></div>
-            <form className="flex flex-col gap-2 bg-orange-200 w-1/2 p-4 rounded-r-lg">
-              <label>Nome</label>
-              <input className="bg-slate-300 mb-2 outline-none px-2 py-1 rounded-md"></input>
-              <label>Nome</label>
-              <input className="bg-slate-300 mb-4 outline-none px-2 py-1 rounded-md"></input>
-              <button className="bg-orange-500 font-medium text-white rounded-md py-1 hover:bg-orange-600 duration-200">
-                Enviar
-              </button>
-            </form>
+          <div className="flex flex-col min-w-[320px] md:min-w-[720px] items-center md:flex-row w-3/4 bg-neutral-100 shadow-lg border border-neutral-200 rounded-lg">
+            <div className="md:w-1/2 p-4">
+              <Image
+                src={FormImage}
+                alt="Imagem placa solar"
+                className="w-full h-full object-cover rounded-lg"
+                quality={100}
+                priority
+              />
+            </div>
+            <BudgetForm />
           </div>
         </section>
       </Container>

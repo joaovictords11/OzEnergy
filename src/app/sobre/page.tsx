@@ -114,7 +114,7 @@ const Sobre = () => {
                 <h4 className="text-2xl border-b border-orange-500">
                   Repositório
                 </h4>
-                <p className="max-w-[350px]">
+                <p className="max-w-[350px] text-neutral-500">
                   Conheça nosso projeto mais a fundo visitando nosso github
                 </p>
                 <a

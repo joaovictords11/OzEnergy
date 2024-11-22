@@ -29,8 +29,8 @@ const FounderCard = ({
       />
       <div className="flex flex-col gap-4">
         <h4 className="text-2xl border-b border-orange-500">{name}</h4>
-        <p>RM {rm}</p>
-        <p>{room}</p>
+        <p className="text-neutral-500">RM {rm}</p>
+        <p className="text-neutral-500">{room}</p>
         <div className="flex gap-4">
           <a href={github} target="_blank" className="text-neutral-600 hover:text-black duration-200">
             <FaGithub size={25} />

@@ -62,19 +62,6 @@ const Orcamento = () => {
             </form>
           </div>
         </section>
-        <section id="orcamento" className="mb-28 flex flex-col items-center">
-            <h2 className="font-semibold text-4xl text-center mb-12">Seu orçamento</h2>
-            <div className="flex w-3/4">
-                <div className="w-1/2 bg-slate-100 rounded-l-lg"></div>
-                <form className="flex flex-col gap-2 bg-orange-200 w-1/2 p-4 rounded-r-lg">
-                    <label>Nome</label>
-                    <input className="bg-slate-300 mb-2 outline-none px-2 py-1 rounded-md"></input>
-                    <label>Nome</label>
-                    <input className="bg-slate-300 mb-4 outline-none px-2 py-1 rounded-md"></input>
-                    <button className="bg-orange-500 font-medium text-white rounded-md py-1 hover:bg-orange-600 duration-200">Enviar</button>
-                </form>
-            </div>
-        </section>
       </Container>
     </main>
   );

@@ -19,7 +19,7 @@ const BudgetForm = () => {
       try {
         const fetchedPanels = await getAllPanels();
 
-        setPanels(fetchedPanels);
+        setPanels(fetchedPanels!);
       } catch (error) {
         toast.error("Falha ao buscar dados");
       }

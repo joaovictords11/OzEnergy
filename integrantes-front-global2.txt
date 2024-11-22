@@ -1,0 +1,10 @@
+Integrantes:
+João Victor de Souza - RM 555290
+Gustavo Tonato Maia - RM 555393
+Diogo Paquete Weyne - RM 558380
+
+Link do vídeo: https://youtu.be/EwNSpd958Fs
+
+Link Vercel: https://oz-energy.vercel.app
+
+Link repositório: https://github.com/joaovictords11/OzEnergy	
